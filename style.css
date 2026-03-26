@@ -131,7 +131,6 @@ a {
 }
 
 .nav-menu {
-    display: none;
     position: fixed;
     top: var(--nav-height);
     left: 0;

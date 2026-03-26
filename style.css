@@ -18,8 +18,8 @@
     --spacing-xl: 3rem;
     --spacing-2xl: 4rem;
 
-    --container-width: 500px;
-    --nav-height: 10px;
+    --container-width: 1200px;
+    --nav-height: 70px;
 
     --transition-fast: 0.2s ease;
     --transition-medium: 0.3s ease;
@@ -133,7 +133,7 @@ a {
 .nav-menu {
     overflow: hidden;
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 0;
     right: 0;
     background-color: var(--color-surface);
@@ -775,6 +775,7 @@ a {
 
     .nav-menu {
         position: static;
+        top: var(--nav-height);
         display: flex;
         transform: none;
         opacity: 1;

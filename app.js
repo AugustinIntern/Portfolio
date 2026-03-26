@@ -217,7 +217,6 @@ function initAccessibility() {
         document.body.classList.remove('keyboard-nav');
     });
     
-    // ARIA labels for dynamic content
     const sections = document.querySelectorAll('.section');
     sections.forEach((section, index) => {
         section.setAttribute('aria-label', `Section ${index + 1}`);

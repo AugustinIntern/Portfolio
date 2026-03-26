@@ -133,7 +133,7 @@ a {
 .nav-menu {
     overflow: hidden;
     position: fixed;
-    top: 0;
+    top: 20px;
     left: 0;
     right: 0;
     background-color: var(--color-surface);

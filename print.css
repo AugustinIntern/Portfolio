@@ -1,0 +1,463 @@
+@page {
+    size: A4;
+    margin: 0.5in 0.6in;
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        accent-color: exact !important;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 10pt;
+        line-height: 1.4;
+        background: white;
+        color: #1a1614;
+    }
+
+    .nav,
+    .nav-toggle,
+    .nav-menu,
+    .nav-actions,
+    .theme-toggle,
+    .print-btn,
+    .footer {
+        display: none !important;
+    }
+
+    .header {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    .section {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 0.8rem;
+    }
+
+    .section-title {
+        page-break-after: avoid;
+        break-after: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .experience-item,
+    .education-item,
+    .project-item,
+    .award-item,
+    .publication-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+
+    #experience {
+        page-break-after: always;
+        break-after: page;
+    }
+
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .header {
+        margin-top: 0;
+        padding: 0.5rem 0 0.8rem 0;
+        background: white;
+        border-bottom: 2px solid #1a1614;
+    }
+
+    .header-name {
+        font-size: 24pt;
+        margin-bottom: 0.2rem;
+        letter-spacing: -0.02em;
+    }
+
+    .header-title {
+        font-size: 12pt;
+        margin-bottom: 0.4rem;
+        color: #6b6461;
+    }
+
+    .header-contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        font-size: 8.5pt;
+    }
+
+    .contact-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 3px;
+        color: #1a1614;
+    }
+
+    .contact-link svg {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .section-title {
+        font-size: 14pt;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.2rem;
+        border-bottom: 1.5px solid #8b4513;
+    }
+
+
+    #about {
+        margin-top: 15px;
+        margin-bottom: 0.8rem;
+    }
+
+    .summary-text {
+        font-size: 9.5pt;
+        line-height: 1.5;
+        color: #1a1614;
+    }
+
+
+    #experience {
+        margin-bottom: 0.8rem;
+    }
+
+    .experience-item {
+        margin-bottom: 0.7rem;
+        padding-bottom: 0.6rem;
+        border-bottom: 1px solid #e8e4e1;
+    }
+
+    .experience-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0.3rem;
+    }
+
+    .experience-title {
+        font-size: 11pt;
+        margin-bottom: 0.1rem;
+        font-weight: 600;
+    }
+
+    .experience-company {
+        font-size: 10pt;
+        color: #8b4513;
+        font-weight: 500;
+    }
+
+    .experience-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        font-size: 8.5pt;
+        text-align: right;
+        color: #6b6461;
+    }
+
+    .experience-list {
+        margin-top: 0.3rem;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .experience-list li {
+        padding-left: 1rem;
+        margin-bottom: 0.25rem;
+        position: relative;
+        font-size: 9pt;
+        line-height: 1.4;
+        color: #1a1614;
+    }
+
+    .experience-list li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #8b4513;
+    }
+
+
+    #education {
+        margin-bottom: 0.7rem;
+    }
+
+    .education-item {
+        margin-bottom: 0.6rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #e8e4e1;
+    }
+
+    .education-item:last-child {
+        border-bottom: none;
+    }
+
+    .education-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0.2rem;
+    }
+
+    .education-degree {
+        font-size: 11pt;
+        margin-bottom: 0.1rem;
+        font-weight: 600;
+    }
+
+    .education-school {
+        font-size: 10pt;
+        color: #8b4513;
+        font-weight: 500;
+    }
+
+    .education-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        font-size: 8.5pt;
+        text-align: right;
+        color: #6b6461;
+    }
+
+    .education-details {
+        font-size: 9pt;
+        color: #6b6461;
+    }
+
+
+    #skills {
+        margin-bottom: 0.7rem;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .skill-category {
+        background: transparent;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .skill-category:hover {
+        box-shadow: none;
+        transform: none;
+    }
+
+    .skill-category-title {
+        font-size: 10pt;
+        margin-bottom: 0.3rem;
+        color: #8b4513;
+        font-weight: 600;
+    }
+
+    .skill-items {
+        gap: 0.3rem;
+    }
+
+    .skill-header {
+        margin-bottom: 0.15rem;
+    }
+
+    .skill-name {
+        font-size: 9pt;
+        font-weight: 500;
+    }
+
+    .skill-level {
+        font-size: 8pt;
+        color: #6b6461;
+    }
+
+    .skill-bar {
+        height: 4px;
+        background-color: #e8e4e1;
+    }
+
+    .skill-progress {
+        background: #8b4513;
+    }
+
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    .skill-tag {
+        padding: 0.15rem 0.4rem;
+        background-color: transparent;
+        border: 1px solid #8b4513;
+        border-radius: 3px;
+        font-size: 8pt;
+        color: #1a1614;
+    }
+
+    .skill-tag:hover {
+        background-color: transparent;
+        color: #1a1614;
+    }
+
+
+    #projects {
+        margin-bottom: 0.7rem;
+    }
+
+    .project-item {
+        margin-bottom: 0.6rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #e8e4e1;
+    }
+
+    .project-item:last-child {
+        border-bottom: none;
+    }
+
+    .project-title {
+        font-size: 10pt;
+        margin-bottom: 0.1rem;
+        font-weight: 600;
+    }
+
+    .project-meta {
+        font-size: 8.5pt;
+        color: #6b6461;
+        margin-bottom: 0.2rem;
+    }
+
+    .project-description {
+        font-size: 9pt;
+        line-height: 1.4;
+        color: #1a1614;
+        margin-bottom: 0.3rem;
+    }
+
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    .project-tag {
+        padding: 0.15rem 0.4rem;
+        background-color: transparent;
+        border: 1px solid #8b4513;
+        border-radius: 3px;
+        font-size: 7.5pt;
+        color: #8b4513;
+    }
+
+
+    #awards {
+        margin-bottom: 0.7rem;
+    }
+
+    .award-item {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid #e8e4e1;
+    }
+
+    .award-item:last-child {
+        border-bottom: none;
+    }
+
+    .award-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0.1rem;
+    }
+
+    .award-title {
+        font-size: 10pt;
+        font-weight: 600;
+    }
+
+    .award-date {
+        font-size: 8.5pt;
+        color: #6b6461;
+    }
+
+    .award-description {
+        font-size: 9pt;
+        color: #6b6461;
+    }
+
+
+    #publications {
+        margin-bottom: 0;
+    }
+
+    .publication-item {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid #e8e4e1;
+    }
+
+    .publication-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .publication-title {
+        font-size: 10pt;
+        margin-bottom: 0.1rem;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .publication-meta {
+        font-size: 8.5pt;
+        color: #8b4513;
+        margin-bottom: 0.1rem;
+    }
+
+    .publication-description {
+        font-size: 9pt;
+        color: #6b6461;
+    }
+
+    a {
+        color: #1a1614;
+        text-decoration: none;
+    }
+
+    a[href^="http"]:after {
+        content: none;
+    }
+
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}

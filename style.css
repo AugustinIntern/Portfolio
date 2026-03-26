@@ -131,6 +131,11 @@ a {
 }
 
 .nav-menu {
+    display: none;
+    list-style: none;
+}
+
+.nav-item {
     position: fixed;
     top: var(--nav-height);
     left: 0;
